@@ -1,0 +1,11 @@
+<div class="sotck-card-container" [class.negative-variation-border]="stock.variation < 0" >
+    <section class="sotck-info">
+        <h2>{{stock.name}}</h2>
+        <p>{{stock.date}}</p>
+    </section>
+    <section class="stock-value">
+        <span class="price">{{stock.price | currency: "BRL"}}</span>
+        <span class="variation" [class.negative-variation]="stock.variation < 0">
+            {{variation}}</span>
+    </section>
+</div>

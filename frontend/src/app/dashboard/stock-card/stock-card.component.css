@@ -1,0 +1,74 @@
+.sotck-card-container {
+    width: 21.375rem;
+    height: 13.8125rem;
+    padding: 1rem;
+    margin: 1.5rem ;
+    border-left: 0.25rem solid var(--positive-variation-color);
+    border-radius: 0.3125rem;
+    background-color: var(--secondary-color);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.negative-variation-border{
+    border-left-color: var(--negative-variation-color);
+}
+
+.sotck-card-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 1em var(--text-color) ;
+}
+
+.sotck-info {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sotck-info h2,
+p {
+    margin: 0;
+}
+
+.sotck-info h2 {
+    color: var(--text-color);
+}
+
+.sotck-info p {
+    color: rgba(92, 99, 105, 0.45);
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+.stock-value {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.stock-value .price {
+    font-size: 3rem;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.stock-value .variation {
+    background-color: var(--positive-variation-color);
+    color: #fff;
+    padding:0.25rem 0.5rem ;
+    border-radius: 0.25rem;
+    align-self: flex-end;
+    margin-top: 0.25rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.stock-value .negative-variation{
+    background-color: var(--negative-variation-color);
+}
