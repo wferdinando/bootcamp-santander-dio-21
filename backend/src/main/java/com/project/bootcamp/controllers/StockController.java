@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.project.bootcamp.model.dto.StockDTO;
 import com.project.bootcamp.services.StockService;
 
-@CrossOrigin
+@CrossOrigin("*")
 @RestController
 @RequestMapping(value = "/stock")
 public class StockController {

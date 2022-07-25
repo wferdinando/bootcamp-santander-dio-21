@@ -6,13 +6,14 @@ server:
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/db_bootcamp_santander_2021
-    username: postgres
-    password: root
+    url: postgres://djvxmiegifzkoa:3e70bf6cdfbc0eec210721c2d53c23108384b5e8354b5d28be91b2493a8df1d9@ec2-54-208-104-27.compute-1.amazonaws.com:5432/d3v7gq9ff91a8t
+
+    username: djvxmiegifzkoa
+    password: 3e70bf6cdfbc0eec210721c2d53c23108384b5e8354b5d28be91b2493a8df1d9
   jpa:
     show-sql: true
     database-platform: org.hibernate.dialect.PostgreSQLDialect
-    generate-ddl: false
+    generate-ddl: true
     hibernate:
       ddl-auto: none
 
